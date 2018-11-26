@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Show Data NYSL</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <header class="principal-header">
+            <div class="header-container">
+                <div class="logo-title-container">
+                    <a href="home.html" class="logo">
+                        <img src="Resources/nysl_logo.png" alt="Logo NYSL">
+                    </a>
+                    <div class="website_title">
+                        <h1>NORTSIDE YOUTH SOCCER LEAGUE</h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="about.html">About NYSL</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="game_info.html">Game Information</a></li>
+                    <li><a href="registration.html" class="current">Registration Form</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="mainBanner">
+            <div class="left">
+                <h2><span>Welcome to our new website!</span></h2>
+            </div>
+            <div class="right">
+                <div class="image_bckgrnd img3"></div>
+                <div class="image_bckgrnd img4"></div>
+                <div class="image_bckgrnd img5"></div>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <section>
+
+                <h2 class="page_title"> NYSL Show Your Information</h2>
+                <div class="little-bar"></div>
+                <h3>The following information has been sent as your feedback:</h3>                
+                <div class="margin-container">
+                    <div class="container-flex">
+                        <table class="table table--1">
+                            <tr>
+                                <th >Form Field</th>
+                                <th >Field Value</th>
+                            </tr>
+
+                            <script language="javascript">
+                                var args = location.search.substr(1).split('&');
+                                for (var i = 0; i < args.length; ++i) {
+                                    var parts = args[i].split('=');
+                                    if (parts != null) {
+                                        var field = parts[0];
+                                        var value = parts[1];
+                                        if (value == null) {
+                                            value = "null"
+                                        } else {
+                                            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                                        }
+
+                                        document.writeln('<tr><td align="center">' + field + '</td>');
+                                        document.writeln('<td align="center">' + value + '</td></tr>');
+                                    }
+                                }
+                            </script>
+
+                            <noscript>
+                                <tr>
+                                    <td>
+                                        <p>You need to turn on Javascript in your browser.</p>
+
+                                        <p>In Microsoft Internet Explorer 4 or greater:</p>
+                                        <ul>
+                                            <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+                                            <li>Click on the "Security" tab.</li>
+                                            <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+                                                and then click on "Settings...".)</li>
+                                            <li>Under "Active scripting" make sure "Enable" is selected.</li>
+                                        </ul>
+
+                                        <p>In Netscape version 4 or greater:</p>
+                                        <ul>
+                                            <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                                            <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+                                            <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+                                            <li>Click the <b>OK</b> button.</li>
+                                        </ul>
+
+                                    </td>
+                                </tr>
+                            </noscript>
+
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</body>
+</html>

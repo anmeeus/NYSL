@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Registration Form NYSL</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="Resources/nysl_logo_oyY_2.ico">
+
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="principal-header">
+            <div class="header-container">
+                <div class="logo-title-container">
+                    <a href="home.html" class="logo">
+                        <img src="Resources/nysl_logo.png" alt="Logo NYSL">
+                    </a>
+                    <div class="website_title">
+                        <h1>NORTSIDE YOUTH SOCCER LEAGUE</h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About NYSL</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="game_info.html">Game Information</a></li>
+                    <li><a href="registration.html" class="current">Registration Form</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="mainBanner">
+            <div class="left">
+                <h2><span>Welcome to our new website!</span></h2>
+
+            </div>
+            <div class="right">
+                <div class="image_bckgrnd img5"></div>
+                <div class="image_bckgrnd img2"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section>
+                <h2 class="page_title">Registration Form</h2>
+                <div class="little-bar"></div>
+                <div class="seasonName flex" id="seasonDiv">
+                    <input type="text" value="Undefined" readonly>
+                </div>
+                <form action="show_data.html" method="GET" onSubmit="return validateForm()" name="myForm">
+                    <fieldset class="personalInfo" id="personalInfo">
+                        <legend>Personal Information</legend>
+                        <div>
+                            <div class="flex flex-space-btw flex-grow relative">
+                                <label for="firstname">Player's First Name:</label>
+                                <div class="flex flex-grow tooltip">
+                                    <input type="text" id="firstname" name="firstname" placeholder="John">
+                                    <span id="firstname_errorMsg" class="tooltiptext">First name invalid. Please enter a valid one.</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-space-btw flex-grow relative">
+                                <label for="lastname">Last Name:</label>
+                                <div class="flex flex-grow tooltip">
+                                    <input type="text" id="lastname" name="lastname" placeholder="Doe">
+                                    <span id="lastname_errorMsg" class="tooltiptext"> "Last name invalid. Please enter a valid one."</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <label for="street">Street Address:</label>
+                            <input type="text" id="street" name="street_address">
+                        </div>
+                        <div>
+                            <div class="flex flex-space-btw flex-grow relative">
+                                <label for="city">City:</label>
+                                <div class="flex flex-grow tooltip">
+                                    <input type="text" id="city" name="city">
+                                    <span id="city_errorMsg" class="tooltiptext"> City name invalid. Please enter a valid one</span>
+                                </div>
+
+                            </div>
+                            <div class="flex flex-space-btw relative">
+                                <label for="zip">Zip Code:</label>
+                                <div class="flex flex-grow tooltip">
+                                    <input type="number" id="zip" name="zip_code">
+                                    <span id="zipCode_errorMsg" class="tooltiptext"> Zip code invalid. Only 5 numbers</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="flex-start">
+                            <div class="flex flex-space-btw relative">
+                                <label for="bthday">Birth Date (mm/dd/yyyy):</label>
+                                <div class="flex flex-grow tooltip">
+                                    <input type="date" id="bthday" name="birth_date">
+                                    <span id="bthDay_errorMsg" class="tooltiptext"> Birthday date invalid.</span>
+                                </div>
+
+                            </div>
+                            <label>Gender: <input type="radio" id="g_female" name="gender" value="Female">Female</label>
+                            <label><input type="radio" name="gender" value="Male">Male</label>
+                        </div>
+                        <div class="flex-start">
+                            <label>Grade:</label>
+                            <label><input type="radio" name="grade" value="pre_school" checked>Pre-School</label>
+                            <label><input type="radio" name="grade" value="first-grade">1<sup>st</sup></label>
+                            <label><input type="radio" name="grade" value="second-grade">2<sup>nd</sup></label>
+                            <label><input type="radio" name="grade" value="third_grade">3<sup>rd</sup></label>
+                            <label><input type="radio" name="grade" value="fourth_grade">4<sup>th</sup></label>
+                            <label><input type="radio" name="grade" value="fifth_grade">5<sup>th</sup></label>
+                        </div>
+                        <div>
+                            <div class="flex flex-space-btw flex-grow relative">
+                                <label for="parent">Parent/Guardian:</label>
+                                <div class="flex flex-grow tooltip">
+                                    <input type="text" id="parent" name="parentGuardian">
+                                    <span id="parent_errorMsg" class="tooltiptext">Parent/Guardian name invalid. Please enter a valid one.</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-space-btw flex-grow relative">
+                                <label for="phone">Contact Phone:</label>
+                                <div class="flex flex-grow tooltip">
+                                    <input type="tel" id="phone" name="phone">
+                                    <span id="phone_errorMsg" class="tooltiptext"> Phone number invalid. Please enter a valid one.</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-space-btw flex-grow relative">
+                                <label for="email">Contact Email:</label>
+                                <div class="flex flex-grow tooltip">
+                                    <input type="email" id="email" name="email" placeholder="name@domain.com">
+                                    <span id="email_errorMsg" class="tooltiptext"> Email invalid. Please be sure to introduce a valid email.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+
+                    <fieldset class="school">
+                        <legend>Which elementary schools do you live near?</legend>
+                        <div>
+                            <div class="flex">
+                                <label for="school1">First Closest School</label>
+                                <select name="school_1" id="school1" onchange="closest_school()">
+                                    <option value="AJ Katzenmaier" selected>AJ Katzenmaier</option>
+                                    <option value="Greenbay">Greenbay</option>
+                                    <option value="Howard A Yeager">Howard A Yeager</option>
+                                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                    <option value="North Elementary">North Elementary</option>
+                                </select>
+                            </div>
+
+                            <div class="flex">
+                                <label for="school2">Second Closest School</label>
+                                <select name="school_2" id="school2" onchange="closest_school()">
+                                    <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                                    <option value="Greenbay" selected>Greenbay</option>
+                                    <option value="Howard A Yeager">Howard A Yeager</option>
+                                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                    <option value="North Elementary">North Elementary</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="position">
+                        <legend>What position(s) do you normally play? (check all that apply)</legend>
+                        <div class="flex-start ">
+                            <div class="column">
+                                <label><input type="checkbox" name="prev_position" value="Forward">Forward</label>
+                                <label><input type="checkbox" name="prev_position" value="Defense">Defense</label>
+                            </div>
+                            <div class="column">
+                                <label><input type="checkbox" name="prev_position" value="Midfield">Midfield</label> <label><input type="checkbox" name="prev_position" value="GoalKeeper">GoalKeeper</label>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="position">
+                        <legend>What position(s) do you want to play? (check all that apply)</legend>
+                        <div class="flex-start">
+                            <div class="column">
+                                <label><input type="checkbox" name="wanted_position" value="Forward">Forward</label>
+                                <label><input type="checkbox" name="wanted_position" value="Defense">Defense</label>
+                            </div>
+                            <div class="column">
+                                <label><input type="checkbox" name="wanted_position" value="Midfield">Midfield</label> <label><input type="checkbox" name="wanted_position" value="GoalKeeper">GoalKeeper</label>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="uniform">
+                        <legend>Uniform</legend>
+                        <input type="checkbox" id="haveUniform" name="uniform" onclick="check_btn_haveUniform()" value="Already Have Uniform"><label class="bold" for="haveUniform">Already Have a Uniform</label>
+                        <div>
+                            <div>
+                                <h4>Jersey Size:</h4>
+                                <div class="flex">
+                                    <div class="column">
+                                        <label><input type="radio" name="jersey" class="radio_uniforms" value="Youth Small">Youth Small</label>
+                                        <label><input type="radio" name="jersey" class="radio_uniforms" value="Youth Medium">Youth Medium</label>
+                                        <label><input type="radio" name="jersey" class="radio_uniforms" value="Youth Large">Youth Large</label>
+                                        <label><input type="radio" name="jersey" class="radio_uniforms" value="Small">Small</label>
+                                    </div>
+                                    <div class="column">
+                                        <label><input type="radio" name="jersey" class="radio_uniforms" value="Medium">Medium</label>
+                                        <label><input type="radio" name="jersey" class="radio_uniforms" value="Large">Large</label>
+                                        <label><input type="radio" name="jersey" class="radio_uniforms" value="Extra-Large">Extra-Large</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4>Short Size:</h4>
+                                <div class="flex">
+                                    <div class="column">
+                                        <label><input type="radio" name="short" class="radio_uniforms" value="Youth Small">Youth Small</label>
+                                        <label><input type="radio" name="short" class="radio_uniforms" value="Youth Medium">Youth Medium</label>
+                                        <label><input type="radio" name="short" class="radio_uniforms" value="Youth Large">Youth Large</label>
+                                        <label><input type="radio" name="short" class="radio_uniforms" value="Small">Small</label>
+                                    </div>
+                                    <div class="column">
+                                        <label><input type="radio" name="short" class="radio_uniforms" value="Medium">Medium</label>
+                                        <label><input type="radio" name="short" class="radio_uniforms" value="Large">Large</label>
+                                        <label><input type="radio" name="short" class="radio_uniforms" value="Extra-Large">Extra-Large</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="permission">
+                        <h3>Permission to Play</h3>
+                        <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.</p>
+                        <p>By entering your name below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+
+                    </div>
+
+                    <fieldset class="account-action" id="s_action">
+                        <legend>Digital Signature</legend>
+                        <div>
+                            <div class="flex flex-space-btw flex-grow relative">
+                                <label for="signature">Parent/Guardian Signature:</label>
+                                <div class="flex flex-grow tooltip">
+                                    <input type="text" id="signature" name="signature">
+                                    <span id="signature_errorMsg" class="tooltiptext"> Parent/Guardian signature invalid. Please enter a valid name.</span>
+                                </div>
+                            </div>
+                            <label for="sig_date">Date:</label>
+                            <div class="tooltip">
+                                <input type="date" id="sig_date" name="signature_date">
+                                <span id="date_errorMsg" class="tooltiptext">Please enter today's date.</span>
+                            </div>
+
+                        </div>
+                        <div class="flex submit_btn">
+                            <input type="submit" id="submit_btn" title="By submiting this registration, you agree to all condition previously stated." name="submit" value="Submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+        </div>
+    </div>
+    <footer class="footer">
+
+    </footer>
+    <script src="scripts/validation_script.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,712 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.principal-header {
+    background: #333;
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+/*----------------------LOGO AND TITLE START-----------------------*/
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+
+}
+
+.logo-title-container {
+    flex: 1;
+    height: 10em;
+    display: flex;
+    align-items: center;
+}
+
+.website_title {
+    flex: 10;
+    color: white;
+    font-size: 1em;
+    padding: 1em;
+    padding-left: 5em;
+    background-color: #033949;
+    border: 5px #a0f949 solid;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-right: 0px;
+}
+
+.logo {
+    flex: 1;
+    align-self: stretch;
+    z-index: 1;
+    margin-left: 50px;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-animation: rotationY 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes rotationY {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+
+    to {
+        -webkit-transform: rotateY(359deg);
+    }
+}
+
+
+
+/*----------------------LOGO AND TITLE END-----------------------*/
+/*--------------------------NAVBAR START-------------------------*/
+.nav {
+    background: #333;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}
+
+.nav ul {
+    margin: 0;
+    margin-left: 75px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.nav ul li {
+    display: flex;
+    list-style: none;
+}
+
+.current {
+    background-color: #a0f949 !important;
+    color: #033949 !important;
+}
+
+.nav ul li a {
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+
+.nav ul li a:hover {
+    background-color: gray;
+    color: #f2f2f2;
+}
+
+
+
+
+/*--------------------------NAVBAR END-------------------------*/
+
+/*--------------------------IMAGE BANNER START-------------------------*/
+
+.mainBanner {
+    height: 250px;
+    border: 2px #a0f949 solid;
+    display: flex;
+    justify-content: space-around;
+    background-color: #84af69;
+
+}
+
+
+.left {
+    flex-basis: 45%;
+    display: flex;
+    align-self: center;
+}
+
+.mainBanner span {
+    background: #a0f949;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+}
+
+.mainBanner h2 {
+    margin: 30px;
+    padding: 10px;
+    font-size: 3.8vw;
+
+}
+
+.right {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.right .image_bckgrnd {
+    width: 95%;
+    height: 95%;
+    flex: 1;
+    align-items: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.img1 {
+    background-image: url(../Resources/design1_image1.jpg);
+}
+
+.img2 {
+    background-image: url(../Resources/design2_image1.jpg);
+}
+
+.img3 {
+    background-image: url(../Resources/soccer_image1.jpg);
+}
+
+.img4 {
+    background-image: url(../Resources/soccer_image2.jpg);
+}
+
+.img5 {
+    background-image: url(../Resources/soccer_image3.jpg);
+}
+
+
+.right .image_bckgrnd:hover {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+
+/*--------------------------IMAGE BANNER END-------------------------*/
+/*--------------------------CONTENT EVENT START-------------------------*/
+.content {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+.content h2 {
+    font-size: 16px;
+    font-size: 3vw;
+}
+
+.little-bar {
+    height: 5px;
+    width: 45px;
+    margin-bottom: 30px;
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*----------------------UPDATED EVENT START-------------------*/
+.event_container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.event_box {
+    flex-basis: 32%;
+    display: flex;
+    justify-content: center;
+    border: 1px #34364f solid;
+    margin-right: 0.5em;
+    box-shadow: 1px 1px 5px grey;
+
+}
+
+.event_box:hover {
+    box-shadow: 3px 3px 15px black;
+
+}
+
+.event_box div {
+    display: flex;
+    font-size: 1.5vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.date {
+    flex: 1;
+    background-color: #2f364c;
+}
+
+.event {
+    flex: 3;
+    background-color: darkgray;
+}
+
+/*--------------------------UPDATED EVENT END-------------------------*/
+
+/*--------------------------ABOUT START-------------------------*/
+
+/*--------------------------ABOUT END---------------------------*/
+.section_about {}
+
+.about_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_info {
+    flex-basis: 30%;
+    padding: 10px;
+}
+
+.about_info:nth-child(1) {
+    background-color: #c0dbe2;
+}
+
+.about_info:nth-child(3) {
+    background-color: #cdf1c3;
+}
+
+.about_info:nth-child(5) {
+    background-color: #ccb9da;
+}
+
+.separator_bar {
+    border: 3px red solid;
+    border-radius: 2px;
+}
+
+.section_about ul {
+    list-style: none;
+    display: flex;
+}
+
+.section_about li {
+    float: left;
+    padding: 15px;
+    width: 33.3%;
+    border-left: 2px red solid;
+
+}
+
+.section_about h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+
+/*--------------------------CONTACT START-------------------------*/
+/*--------------------------CONTACT END---------------------------*/
+
+
+/*--------------------------RULES START-------------------------*/
+
+.headings ul,
+ol {
+    padding-left: 40px;
+}
+
+.headings {
+    list-style: none;
+    margin-top: 25px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.headings > li {
+    margin-bottom: 10px;
+}
+
+.regulations {
+    font-weight: bold;
+}
+
+.regulations p {
+    font-weight: normal;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.regulations ol {
+    font-weight: normal;
+}
+
+.regulations ol > li {
+    padding-left: 10px;
+}
+
+.square-bullet {
+    list-style: square;
+}
+
+.circle-bullet {
+    list-style: circle;
+}
+
+.bold_span span {
+    font-weight: bold;
+}
+
+
+.left-sideNav {
+    display: flex;
+    /*    position: absolute;*/
+    align-items: flex-start;
+    top: 150px;
+    width: 200px;
+    height: inherit;
+    margin-right: 25px;
+    font-size: 10pt;
+}
+
+.left-sideNav ul {
+    margin-left: 1.2em;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    overflow-x: hidden;
+    top: 2rem;
+}
+
+/*--------------------------RULES END---------------------------*/
+/*--------------------------GAME INFO START-----------------------*/
+
+.gameInfo {}
+
+.gameInfo h3 {
+    margin: .5em;
+}
+
+.underline {
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+}
+
+.margin-container {
+    width: 70%;
+    margin: auto;
+}
+
+.container-flex {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 18pt;
+}
+
+.table th,
+td {
+    vertical-align: top;
+    text-align: left;
+}
+.table th{
+    border-bottom: 2px solid black;
+    background-color: #84af69;
+}
+.table tbody:nth-child(2n){
+    background-color: #90e8396b;
+}
+.table tbody:hover,
+tr.hover,
+th.hover,
+td.hover,
+tr.hoverable:hover {
+    background-color: red;
+}
+
+.table .days {
+    text-indent: 1.8em;
+}
+
+.title_container {
+    width: 100%;
+}
+
+.title_container h3 {
+    font-size: 1.5vw;
+}
+
+.maps-flex-grid {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.map-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.map-row .cell {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+
+}
+
+.maps-flex-grid iframe {
+    width: 100%;
+    height: 250px;
+}
+
+.map-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+    /*background: rgba(76, 175, 81, 1);        
+    background: linear-gradient(to right, rgba(76, 175, 81, 1) 0%, rgba(228, 240, 218, 1) 100%);*/
+
+}
+
+.text-right {
+    text-align: right;
+    color: #4285f4;
+}
+
+.moreInfo {
+    display: block;
+    margin: auto;
+}
+
+.moreInfo p {
+    margin-top: 1em;
+}
+
+.moreInfo .wrapinfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*--------------------------GAME INFO END-----------------------*/
+/*--------------------------REGISTRATION FORM START-------------*/
+.bold {
+    font-weight: bold;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+}
+
+
+
+fieldset {
+    border: 1px solid #cecfd5;
+    border-radius: 6px;
+    padding: 24px 30px;
+    margin: 10px 0;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+fieldset label {
+    padding: 5px;
+}
+
+
+
+fieldset > div {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.personalInfo input {
+    flex-grow: 1;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-grow {
+    flex: 1;
+}
+
+.seasonName {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.seasonName input {}
+
+.flex-space-btw {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#zip {
+    flex-grow: 0;
+}
+
+#bthday {
+    flex-grow: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.vertical_wrap {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px 10px 10px 0px;
+}
+
+
+
+.permission {
+    padding-top: 40px;
+}
+
+.permission h3 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+.permission p {
+    padding-bottom: 20px;
+}
+
+#signature {
+    flex-grow: 1;
+}
+
+.submit_btn {
+    justify-content: flex-end;
+}
+
+input[type=submit] {
+    height: 50px;
+    width: 80px;
+    padding: 5px 15px;
+    margin: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    justify-content: flex-end;
+}
+
+input[type=submit]:hover {
+    background: #ffffff;
+}
+
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 0;
+    margin: auto;
+    font-size: 0.8em;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    /*    visibility: visible;*/
+}
+
+.relative {
+    position: relative;
+}
+
+
+
+/*--------------------------REGISTRATION FORM END---------------*/
