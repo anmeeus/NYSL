@@ -460,7 +460,7 @@ tr.hover,
 th.hover,
 td.hover,
 tr.hoverable:hover {
-    background-color: red;
+    background-color: darkgrey;
 }
 
 .table .days {
