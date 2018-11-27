@@ -12,7 +12,7 @@
   var all_input_w_tooltips = document.getElementsByClassName("tooltip");
   for (let i = 0; i < all_input_w_tooltips.length; i++) {
       //        console.log(all_input_w_tooltips);
-      all_input_w_tooltips[i].getElementsByTagName("INPUT")[0].required = true;
+      all_input_w_tooltips[i].getElementsByTagName("INPUT")[0].required = false;
   }
 
   var this_date = new Date();
@@ -32,6 +32,9 @@
           return "Undefined";
       }
   }
+  //Set value of today's date to 
+  var signature_date_input = document.getElementById("sig_date");
+  signature_date_input.value = this_date.toISOString().substr(0, 10);
 
   function validateForm() {
 
@@ -99,10 +102,11 @@
       }
 
 
+
       if ((signature_date.getFullYear() != current_time.getFullYear()) || (signature_date.getMonth() != current_time.getMonth()) || (signature_date.getDay() != current_time.getDay())) {
           signature_calendar.style.backgroundColor = error_bacground_color;
           document.getElementById("date_errorMsg").style.visibility = "visible";
-          flag = false;          
+          flag = false;
       }
 
       if (reg_names.test(signature_name.value) == false) {
@@ -164,12 +168,12 @@
               }
 
           }
-      }else{
+      } else {
           document.getElementById("bthDay_errorMsg").style.visibility = "visible";
-              document.getElementById("bthDay_errorMsg").innerHTML = "Invalid or empty date. Please enter a valid birthday date";
-              birthday.style.backgroundColor = error_bacground_color;
-              birthday.focus();
-              flag = false;
+          document.getElementById("bthDay_errorMsg").innerHTML = "Invalid or empty date. Please enter a valid birthday date";
+          birthday.style.backgroundColor = error_bacground_color;
+          birthday.focus();
+          flag = false;
       }
 
       if (reg_city.test(city_name.value) == false) {
