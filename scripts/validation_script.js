@@ -12,7 +12,7 @@
   var all_input_w_tooltips = document.getElementsByClassName("tooltip");
   for (let i = 0; i < all_input_w_tooltips.length; i++) {
       //        console.log(all_input_w_tooltips);
-      all_input_w_tooltips[i].getElementsByTagName("INPUT")[0].required = false;
+      all_input_w_tooltips[i].getElementsByTagName("INPUT")[0].required = true;
   }
 
   var this_date = new Date();
